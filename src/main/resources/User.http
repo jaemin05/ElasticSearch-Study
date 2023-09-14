@@ -1,0 +1,13 @@
+### Save User
+POST http://localhost:8080/user
+Content-Type: application/json
+
+< User.json
+
+### Get User By Name
+GET http://localhost:8080/user/name/jae
+Content-Type: application/json
+
+### Get User By Age
+GET http://localhost:8080/user/age/10
+Content-Type: application/json

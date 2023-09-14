@@ -1,0 +1,12 @@
+{
+  "properties" : {
+    "id" : {"type" : "keyword"},
+    "name" : {"type" : "keyword", "fields": {"kor":  {"type":  "keyword", "analyzer": "korean"}, "ngram":  {"type" : "keyword", "analyzer":  "my_ngram_analyzer"}}},
+    "age" : {"type" : "keyword"},
+    "description" : {"type" : "text", "fields": {"kor":  {"type":  "text", "analyzer": "korean"}, "ngram":  {"type" : "text", "analyzer":  "my_ngram_analyzer"}}},
+    "createdAt" : {
+      "type" : "date",
+      "format": "uuuu-MM-dd'T'HH:mm:ss.SSS||epoch_millis"
+    }
+  }
+}
